@@ -1,0 +1,34 @@
+<h2>AGENT PROFILE</h2> 
+
+<hr/>
+<div *ngIf="macsalite">
+  <div>
+    <label><b>First Name: </b></label> {{macsalite.firstName}}
+  </div>
+  <div>
+    <label><b>Last Name: </b></label> {{macsalite.lastName}}
+  </div>
+  <div>
+    <label><b>User Id: </b></label> {{macsalite.userName}}
+  </div>
+  <div>
+    <label><b>Email Id: </b></label> {{macsalite.emailAddress}}
+  </div>  
+  <div>
+    <label><b>Date of Birth: </b></label> {{macsalite.birthDayString}}
+  </div>
+  <div>
+    <label><b>Gender: </b></label> {{macsalite.genderString}}
+  </div>
+  <div>
+    <label><b>Mobile Number: </b></label> {{macsalite.phNum}}
+  </div>
+  
+</div>
+
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Macsalite List</button><br>
+
+

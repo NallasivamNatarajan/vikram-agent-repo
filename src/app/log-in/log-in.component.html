@@ -1,0 +1,38 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macsalite Login</title>
+</head>
+
+    <div class="container login-form">
+        <h2 class="login-title">- Please Login -</h2>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form>
+                    <div class="input-group login-userinput">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input id="txtUser" type="text" name="userName" [(ngModel)]="userName" class="form-control" name="username" placeholder="Username" />
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input id="txtPassword" type="password" [(ngModel)]="password" name="password" class="form-control" name="password"
+                            placeholder="Password" />
+                        <span id="showPassword" class="input-group-btn">
+                            <button class="btn btn-default reveal" type="button">
+                                <i class="glyphicon glyphicon-eye-open"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <button (click)="login(userName,password)" class="btn btn-primary btn-block login-button" type="submit">
+                        <i class="fa fa-sign-in"></i> Login
+                    </button>
+                    <div class="checkbox login-options">
+                        <label><input type="checkbox" /> Remember Me</label>
+                        <a href="add" class="login-forgot">New Agent</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

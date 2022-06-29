@@ -1,0 +1,70 @@
+
+<button (click)="list()" class="btn btn-primary">Back to Agents List</button><br><br>
+
+<h3><b>UPDATE AGENT PROFILE</b></h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="macsalite.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="macsalite.lastName" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email Id</label>
+      <input type="text" class="form-control" id="emailAddress" required [(ngModel)]="macsalite.emailAddress" name="emailAddress">
+    </div>
+
+    <div class="form-group">
+      <label for="name">User Id</label>
+      <input type="text" class="form-control" id="userName" required="true" [(ngModel)]="macsalite.userName" name="userName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Password</label>
+      <input type="password" class="form-control" id="password" required="true" [(ngModel)]="macsalite.password" name="password">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Confirm Password</label>
+      <input type="password" class="form-control" id="confirmPassword" required="true" [(ngModel)]="macsalite.confirmPassword" name="confirmPassword">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Date of Birth</label>
+    <input type="date" class="form-control" id="birthDay" required="true" [(ngModel)]="macsalite.birthDay" name="birthDay">    
+    </div>
+     
+    <div class="form-group">
+      <label for="name">Please Select your Gender</label>
+      <div class="row">
+        <label class="md-check">
+          <input type="radio" value= 1 name="gender" [(ngModel)]="macsalite.gender">
+          Male
+        </label></div>
+        <div class="row">
+        <label class="md-check">
+          <input type="radio" value= 2 name="gender" [(ngModel)]="macsalite.gender">     
+          Female
+        </label></div>
+        <div class="row">
+        <label class="md-check">
+          <input type="radio" value= 3 name="gender" [(ngModel)]="macsalite.gender">     
+          Other
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Mobile Number</label>
+      <input type="number" class="form-control" id="phNum" required="true" [(ngModel)]="macsalite.phNum" name="phNUm">
+    </div>
+
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
